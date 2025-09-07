@@ -1,4 +1,4 @@
-
+/* IMPORT GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Cinzel:wght@700&family=Merriweather:wght@400;700&display=swap');
 
 body {
@@ -6,6 +6,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
 }
+
+/* Navigation Bar */
 nav {
     background-color: #0a0a0a;
     display: flex;
@@ -64,6 +66,8 @@ nav ul li a {
     margin: 0;
     padding: 0;
 }
+
+/* BANNER */
 .banner {
     margin-top: 0;
     position: relative;
@@ -81,7 +85,7 @@ nav ul li a {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    font-family: 'Cinzel', serif; 
+    font-family: 'Cinzel', serif;   /* historical font */
 }
 .banner-text h1 {
     font-size: 60px;
@@ -91,6 +95,8 @@ nav ul li a {
     font-size: 20px;
     margin-top: 15px;
 }
+
+/* GALLERY - SQUARE IMAGES */
 .gallery {
     padding: 50px 20px;
 }
@@ -112,27 +118,29 @@ nav ul li a {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     cursor: pointer;
 }
+/* POP EFFECT */
 .gallery-item img:hover {
     transform: scale(1.15) rotate(3deg);
     box-shadow: 0 12px 25px rgba(0,0,0,0.4);
 }
+/* IMAGE NAME */
 .gallery-item p {
     margin-top: 10px;
     font-size: 16px;
-    font-family: 'Merriweather', serif; 
+    font-family: 'Merriweather', serif;  /* elegant font for names */
     font-weight: 700;
     color: #333;
 }
 
+/* FOOTER */
 .historical-footer {
     position: relative;
-    background-color:  #e9c1a6;
+    background-color: #d8b1b1;
     color: black;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 95px;
     font-family: 'Poppins', sans-serif;
 }
-
 .footer-silhouette {
     position: absolute;
     top: 0;
@@ -140,31 +148,24 @@ nav ul li a {
     width: 100%;
     height: 150px;
 }
-
 .footer-content {
     position: relative;
     z-index: 2;
-    padding: 2px;
+    padding: 30px;
 }
-
 .footer-social {
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
-
 .footer-social a {
     color: black;
     margin: 0 8px;
     font-size: 20px;
     transition: color 0.3s;
 }
-
 .footer-social a:hover {
     color: black;
 }
-
 .footer-content p {
-    margin: 1px 0;
+    margin: 5px 0;
     font-size: 14px;
 }
-
-

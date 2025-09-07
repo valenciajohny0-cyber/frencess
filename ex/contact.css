@@ -1,15 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Cinzel:wght@700&family=Merriweather:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     background-color: #f4f4f4;
 }
+
+/* Navigation Bar */
 nav {
     background-color: #0a0a0a;
     display: flex;
     justify-content: space-between;
-    font-family: 'Poppins', sans-serif;
+    font-family:  'poppins', sans-serif;
     align-items: center;
     padding: 1px 10px;
 }
@@ -41,7 +49,7 @@ nav ul li a {
     font-size: 1rem;
     padding: 5px 10px;
 }
-.navbar a:hover { color: #eec4a9; }
+.navbar a:hover { color: #e4b89d; }
 
 * {
     margin: 0;
@@ -63,6 +71,7 @@ nav ul li a {
     margin: 0;
     padding: 0;
 }
+/* BANNER */
 .banner {
   position: relative;
 }
@@ -88,6 +97,8 @@ nav ul li a {
   font-size: 30px;
   font-style: italic;
 }
+
+/* CONTACT SECTION */
 .contact-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -134,6 +145,8 @@ nav ul li a {
 .contact-form button:hover {
   background: #8b623d;
 }
+
+/* MAP */
 .map-container {
   background: #fff9e6;
   padding: 30px;
@@ -153,12 +166,13 @@ nav ul li a {
   border-radius: 10px;
   border: 2px solid #cbb994;
 }
+
 .historical-footer {
     position: relative;
-    background-color:  #e9c1a6;
+    background-color: #e6d9d9;
     color: black;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 80px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -173,11 +187,11 @@ nav ul li a {
 .footer-content {
     position: relative;
     z-index: 2;
-    padding: 2px;
+    padding: 20px;
 }
 
 .footer-social {
-    margin-bottom: 2px;
+    margin-bottom: 20px;
 }
 
 .footer-social a {
@@ -192,8 +206,22 @@ nav ul li a {
 }
 
 .footer-content p {
-    margin: 1px 0;
+    margin: 5px 0;
     font-size: 14px;
 }
 
-
+/* FEATHER ANIMATION */
+.feather {
+  position: fixed;
+  bottom: 20px;
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  background: url('feather.png') no-repeat center/contain;
+  animation: float 6s linear infinite;
+}
+@keyframes float {
+  0% { transform: translateX(0) rotate(0deg); opacity: 0.8; }
+  50% { transform: translateX(-100vw) rotate(180deg); opacity: 1; }
+  100% { transform: translateX(0) rotate(360deg); opacity: 0.8; }
+}
