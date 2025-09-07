@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Cinzel:wght@700&family=Merriweather:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+nav {
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding: 1px 10px;
+}
+.logo {
+    float: left;
+    padding-top: 0%;
+    cursor: pointer;
+    margin-bottom: 0%;
+    margin-left: -2%;
+}
+.logo img {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+.logo img:hover { transform: scale(1.1); }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-left: 25px;
+}
+nav ul li a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+.navbar a:hover { color: #eec4a9; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(248, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.about {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+
+  background: radial-gradient(circle at center, #1e1e1e, #0a0a0a);
+
+}
+
+.about-overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 30px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.about-overlay h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+  color: #eec4a9;
+}
+.about-overlay p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #ffffff; 
+}
+.circle-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  animation: rotate 40s linear infinite;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.circle-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  transform-origin: -250px center;
+}
+
+.circle-container img:nth-child(1)  { transform: rotate(0deg)   translateX(250px); }
+.circle-container img:nth-child(2)  { transform: rotate(25.7deg)  translateX(250px); }
+.circle-container img:nth-child(3)  { transform: rotate(51.4deg)  translateX(250px); }
+.circle-container img:nth-child(4)  { transform: rotate(77.1deg)  translateX(250px); }
+.circle-container img:nth-child(5)  { transform: rotate(102.8deg) translateX(250px); }
+.circle-container img:nth-child(6)  { transform: rotate(128.5deg) translateX(250px); }
+.circle-container img:nth-child(7)  { transform: rotate(154.2deg) translateX(250px); }
+.circle-container img:nth-child(8)  { transform: rotate(180deg)   translateX(250px); }
+.circle-container img:nth-child(9)  { transform: rotate(205.7deg) translateX(250px); }
+.circle-container img:nth-child(10) { transform: rotate(231.4deg) translateX(250px); }
+.circle-container img:nth-child(11) { transform: rotate(257.1deg) translateX(250px); }
+.circle-container img:nth-child(12) { transform: rotate(282.8deg) translateX(250px); }
+.circle-container img:nth-child(13) { transform: rotate(308.5deg) translateX(250px); }
+.circle-container img:nth-child(14) { transform: rotate(334.2deg) translateX(250px); }
+
+@keyframes rotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+.historical-footer {
+    position: relative;
+    background-color: #e9c1a6;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-silhouette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    padding: 2px;
+}
+
+.footer-social {
+    margin-bottom: 2px;
+}
+
+.footer-social a {
+    color: black;
+    margin: 0 8px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: black;
+}
+
+.footer-content p {
+    margin: 1px 0;
+    font-size: 14px;
+}
+
+
